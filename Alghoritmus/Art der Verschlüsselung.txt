@@ -1,0 +1,23 @@
+Vorraussetzung ein einfacher algorythmus.
+
+klartext wird eingegeben. dann ein beliebiger schlüssel, der nur aus Zahlen besteht. die erste Zahl 
+des schlüssels bestimmt ein muster. Der Klartext wird in einzelne Buchstaben und Zahlen zerlegt. dann
+wird nach dem Muster alles wieder zusammen gesetzt. z.B:
+
+Klartext = Hallo
+dann nach muster in 5 wirre blöcke verteilen, da auch 5 buchstaben.
+1:A5H1ö
+2:A2NMK
+3:O0L1V
+4:7HCTL
+5:PO028
+
+in diesem falle sind sie an stelle 3,1,2,5,3.
+alle dieser Blöcke werden durch einen anderen Algorythmus geschickt. (Dieser wird noch ausgesucht z.B AES)
+dabei entsteht nun ein weiterer Geiheimtext. Dieser Text wäre mit dem passwort 294 folgender:
+
+ZZZZZ ATSNA DWMGV RFGPT ODIGX VUVRN TBGSD QKOUP EGSBT OCDQU RCHWN
+FFWWI DFJSD XQOTR GEIHQ WWNKU UCWOQ LAHWA OCIFC GTBEW NEHXI XTBTS
+DWCKA WVSEJ OBNCW HBNJB LWTZZ YYYYY
+
+das sind jetzt alle 5 Blöcke hintereiander.

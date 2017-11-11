@@ -1,0 +1,55 @@
+object Form2: TForm2
+  Left = 554
+  Height = 251
+  Top = 305
+  Width = 311
+  BorderStyle = bsSingle
+  Caption = 'Neues Passwort'
+  ClientHeight = 251
+  ClientWidth = 311
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object Edit1: TEdit
+    Left = 39
+    Height = 23
+    Top = 104
+    Width = 232
+    AutoSize = False
+    AutoSelect = False
+    OnEditingDone = Edit1EditingDone
+    OnEnter = Edit1Enter
+    TabOrder = 2
+    Text = 'Neues Passwort eingeben'
+  end
+  object Button1: TButton
+    Left = 118
+    Height = 25
+    Top = 200
+    Width = 75
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 39
+    Height = 23
+    Top = 152
+    Width = 232
+    OnEditingDone = Edit2EditingDone
+    OnEnter = Edit2Enter
+    TabOrder = 3
+    Text = 'Neues Passwort bestätigen'
+  end
+  object Edit3: TEdit
+    Left = 39
+    Height = 23
+    Top = 32
+    Width = 232
+    OnEditingDone = Edit3EditingDone
+    OnEnter = Edit3Enter
+    TabOrder = 1
+    Text = 'Benutzername eingeben'
+  end
+end

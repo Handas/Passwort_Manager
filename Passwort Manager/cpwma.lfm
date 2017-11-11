@@ -1,0 +1,115 @@
+object Form1: TForm1
+  Left = 1156
+  Height = 252
+  Top = 142
+  Width = 312
+  BorderStyle = bsSingle
+  Caption = 'Passwort Eingabe'
+  ClientHeight = 232
+  ClientWidth = 312
+  Menu = MainMenu1
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.2.4.0'
+  object Edit1: TEdit
+    Left = 39
+    Height = 23
+    Top = 88
+    Width = 232
+    OnEnter = Edit1Enter
+    TabOrder = 2
+    Text = 'Passwort eingeben'
+  end
+  object Button1: TButton
+    Left = 118
+    Height = 25
+    Top = 144
+    Width = 75
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = -10
+    Height = 15
+    Top = 192
+    Width = 320
+    Caption = '________________________________________________________________'
+    Enabled = False
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 15
+    Top = 208
+    Width = 97
+    Caption = 'Passwort Manager'
+    Enabled = False
+    ParentColor = False
+  end
+  object IdVersion: TLabel
+    Left = 264
+    Height = 15
+    Top = 208
+    Width = 34
+    Caption = 'V 1.0.1'
+    Enabled = False
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 1
+    Top = 152
+    Width = 1
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Arial'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Edit2: TEdit
+    Left = 39
+    Height = 23
+    Top = 48
+    Width = 232
+    OnEditingDone = Edit2EditingDone
+    OnEnter = Edit2Enter
+    TabOrder = 1
+    Text = 'Benutzername eingeben'
+  end
+  object MainMenu1: TMainMenu
+    left = 248
+    top = 112
+    object MenuItem1: TMenuItem
+      Caption = 'Datei'
+      object MenuItem2: TMenuItem
+        Caption = 'Neues Passwort erstellen'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem6: TMenuItem
+        Caption = 'Passwort ändern'
+        OnClick = MenuItem6Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Beenden'
+        OnClick = MenuItem4Click
+      end
+    end
+    object MenuItem3: TMenuItem
+      Caption = 'Hilfe'
+      object MenuItem5: TMenuItem
+        Caption = 'Hilfe'
+      end
+    end
+  end
+  object DCP_sha256_1: TDCP_sha256
+    Id = 28
+    Algorithm = 'SHA256'
+    HashSize = 256
+    left = 40
+    top = 112
+  end
+end

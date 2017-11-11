@@ -1,0 +1,186 @@
+object Form4: TForm4
+  Left = 287
+  Height = 682
+  Top = 207
+  Width = 999
+  BorderStyle = bsSingle
+  Caption = 'Passwort Manager'
+  ClientHeight = 682
+  ClientWidth = 999
+  Color = clWhite
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object StringGrid1: TStringGrid
+    Left = 0
+    Height = 688
+    Top = 0
+    Width = 1104
+    AlternateColor = 14145495
+    BorderStyle = bsNone
+    Color = clWhite
+    Columns = <    
+      item
+        Title.Caption = 'Benutzername'
+        Title.Color = clWhite
+        Title.Font.CharSet = ANSI_CHARSET
+        Title.Font.Height = -15
+        Title.Font.Name = 'Arial'
+        Title.Font.Pitch = fpVariable
+        Title.Font.Quality = fqCleartype
+        Title.Font.Style = [fsBold]
+        Width = 200
+      end    
+      item
+        Title.Caption = 'Passwort'
+        Width = 150
+      end    
+      item
+        Title.Caption = 'Seiten URL'
+        Width = 200
+      end    
+      item
+        Title.Caption = 'Anmerkungen'
+        Width = 200
+      end>
+    FixedColor = clWhite
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
+    RowCount = 31
+    TabOrder = 0
+    TitleFont.CharSet = ANSI_CHARSET
+    TitleFont.Height = -15
+    TitleFont.Name = 'Arial'
+    TitleFont.Pitch = fpVariable
+    TitleFont.Quality = fqDraft
+    TitleFont.Style = [fsBold]
+    TitleStyle = tsNative
+    ColWidths = (
+      64
+      200
+      150
+      200
+      200
+    )
+    Cells = (
+      30
+      0
+      1
+      '1'
+      0
+      2
+      '2'
+      0
+      3
+      '3'
+      0
+      4
+      '4'
+      0
+      5
+      '5'
+      0
+      6
+      '6'
+      0
+      7
+      '7'
+      0
+      8
+      '8'
+      0
+      9
+      '9'
+      0
+      10
+      '10'
+      0
+      11
+      '11'
+      0
+      12
+      '12'
+      0
+      13
+      '13'
+      0
+      14
+      '14'
+      0
+      15
+      '15'
+      0
+      16
+      '16'
+      0
+      17
+      '17'
+      0
+      18
+      '18'
+      0
+      19
+      '19'
+      0
+      20
+      '20'
+      0
+      21
+      '21'
+      0
+      22
+      '22'
+      0
+      23
+      '23'
+      0
+      24
+      '24'
+      0
+      25
+      '25'
+      0
+      26
+      '26'
+      0
+      27
+      '27'
+      0
+      28
+      '28'
+      0
+      29
+      '29'
+      0
+      30
+      '30'
+    )
+  end
+  object Panel1: TPanel
+    Left = 824
+    Height = 664
+    Top = 8
+    Width = 170
+    BevelOuter = bvNone
+    BidiMode = bdRightToLeft
+    BorderStyle = bsSingle
+    ClientHeight = 660
+    ClientWidth = 166
+    ParentBidiMode = False
+    TabOrder = 1
+    object Button2: TButton
+      Left = 8
+      Height = 48
+      Top = 592
+      Width = 144
+      Caption = 'Speichern'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Name = 'Arial'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = Button2Click
+      ParentFont = False
+      TabOrder = 0
+    end
+  end
+end

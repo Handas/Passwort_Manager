@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/4234662/decrypting-using-rijndael-dcpcrypt-library-delphi

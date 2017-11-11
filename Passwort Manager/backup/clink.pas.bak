@@ -1,0 +1,20 @@
+unit cLink;
+
+{$mode objfpc}{$H+}
+
+interface
+
+uses
+  Classes, SysUtils;
+
+implementation
+
+var
+   PW : String;
+
+end.
+
+  if PW != '' then
+  begin
+    ShowMessage('fdsfgdf');
+  end

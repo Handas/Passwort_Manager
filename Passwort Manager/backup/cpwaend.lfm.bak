@@ -1,0 +1,66 @@
+object Form3: TForm3
+  Left = 1013
+  Height = 251
+  Top = 434
+  Width = 311
+  BorderStyle = bsSingle
+  Caption = 'Passwort ändern'
+  ClientHeight = 251
+  ClientWidth = 311
+  OnClose = FormClose
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.2.0.3'
+  object Edit1: TEdit
+    Left = 39
+    Height = 23
+    Top = 48
+    Width = 232
+    OnEnter = Edit1Enter
+    TabOrder = 2
+    Text = 'Aktuelles Passwort eingeben'
+  end
+  object Edit2: TEdit
+    Left = 39
+    Height = 23
+    Top = 128
+    Width = 232
+    OnEnter = Edit2Enter
+    TabOrder = 3
+    Text = 'Neues Passwort eingeben'
+  end
+  object Edit3: TEdit
+    Left = 39
+    Height = 23
+    Top = 168
+    Width = 232
+    OnEnter = Edit3Enter
+    TabOrder = 4
+    Text = 'Neues Passwort wiederholen'
+  end
+  object Button1: TButton
+    Left = 118
+    Height = 25
+    Top = 216
+    Width = 75
+    Caption = 'OK'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Edit4: TEdit
+    Left = 39
+    Height = 23
+    Top = 8
+    Width = 232
+    OnEnter = Edit4Enter
+    TabOrder = 1
+    Text = 'Aktullen Benutzer eingeben'
+  end
+  object DCP_sha256_1: TDCP_sha256
+    Id = 28
+    Algorithm = 'SHA256'
+    HashSize = 256
+    left = 38
+    top = 216
+  end
+end
